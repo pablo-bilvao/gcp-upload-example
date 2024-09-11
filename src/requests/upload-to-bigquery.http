@@ -1,0 +1,9 @@
+POST http://localhost:3000/upload/bigquery
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary
+
+------WebKitFormBoundary
+Content-Disposition: form-data; name="file"; filename="sample.csv"
+Content-Type: text/csv
+
+< ./sample.csv
+------WebKitFormBoundary--

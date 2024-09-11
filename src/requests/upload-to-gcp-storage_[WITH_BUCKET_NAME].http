@@ -1,0 +1,17 @@
+POST http://localhost:3000/upload/gcp-storage
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary
+
+------WebKitFormBoundary
+Content-Disposition: form-data; name="subfolder"
+
+mmm
+------WebKitFormBoundary
+Content-Disposition: form-data; name="bucketName"
+
+gcp_export_data_bucket
+------WebKitFormBoundary
+Content-Disposition: form-data; name="file"; filename="sample.csv"
+Content-Type: text/csv
+
+< ./sample.csv
+------WebKitFormBoundary--
